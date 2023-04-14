@@ -4,6 +4,10 @@
 
 using namespace std;
 
+//훨씬 더 쉬운 방법이 있음.
+//%10은 1의 자리를 자연수로 출력해주는 연산. 즉, 자릿수를 구하려는 숫자 x를 10씩 계속 나눠서
+//%10으로 1의자리를 구해준다.
+
 int digit_sum( int x ){
     int sum = 0 ;
     int temp;
@@ -40,7 +44,7 @@ int main(int argc, char** argv){
             if(numArr[i] > maxNum){
                 maxNum = numArr[i];
             }
-        }
+        } 
     }
 
     printf("%d", maxNum);
